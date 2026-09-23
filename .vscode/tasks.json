@@ -1,0 +1,64 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "1. Compilar SystemVerilog",
+            "type": "shell",
+            "command": "C:\\msys64\\msys2_shell.cmd",
+            "args": [
+                "-defterm",
+                "-no-start",
+                "-ucrt64",
+                "-where",
+                "${fileDirname}",
+                "-c",
+                "iverilog -g2012 -o simulador.vvp ${fileBasenameNoExtension}.sv tb_${fileBasenameNoExtension}.sv"
+            ],
+            "group": "none"
+        },
+        {
+            "label": "2. Ejecutar Simulacion",
+            "type": "shell",
+            "command": "C:\\msys64\\msys2_shell.cmd",
+            "args": [
+                "-defterm",
+                "-no-start",
+                "-ucrt64",
+                "-where",
+                "${fileDirname}",
+                "-c",
+                "vvp simulador.vvp"
+            ],
+            "group": "none"
+        },
+        {
+            "label": "3. Visualizar Ondas (GTKWave)",
+            "type": "shell",
+            "command": "C:\\msys64\\msys2_shell.cmd",
+            "args": [
+                "-defterm",
+                "-no-start",
+                "-ucrt64",
+                "-where",
+                "${fileDirname}",
+                "-c",
+                "gtkwave simulacion.vcd"
+            ],
+            "group": "none"
+        },
+        {
+            "label": "Simular Proyecto Completo",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "1. Compilar SystemVerilog",
+                "2. Ejecutar Simulacion",
+                "3. Visualizar Ondas (GTKWave)"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}
