@@ -4,6 +4,8 @@ module contador (
     input  logic       clk,
     input  logic       rst,
     output logic [3:0] cuenta
+
+    
 );
 
     // Bloque secuencial sensible al flanco de subida del reloj
