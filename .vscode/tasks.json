@@ -32,27 +32,11 @@
             "group": "none"
         },
         {
-            "label": "3. Visualizar Ondas (GTKWave)",
-            "type": "shell",
-            "command": "C:\\msys64\\msys2_shell.cmd",
-            "args": [
-                "-defterm",
-                "-no-start",
-                "-ucrt64",
-                "-where",
-                "${fileDirname}",
-                "-c",
-                "gtkwave simulacion.vcd"
-            ],
-            "group": "none"
-        },
-        {
             "label": "Simular Proyecto Completo",
             "dependsOrder": "sequence",
             "dependsOn": [
                 "1. Compilar SystemVerilog",
-                "2. Ejecutar Simulacion",
-                "3. Visualizar Ondas (GTKWave)"
+                "2. Ejecutar Simulacion"
             ],
             "group": {
                 "kind": "build",
