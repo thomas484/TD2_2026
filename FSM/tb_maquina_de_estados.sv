@@ -36,6 +36,10 @@ module tb_maquina_de_estados;
         #10 a = 1; // Recibe '1' -> Pasa a S2
         #10 a = 0; // Recibe '0' -> Pasa a S3
         #10 a = 1; // Recibe '1' -> Pasa a S4 (y debe activarse la salida y = 1)
+        //prueba de solapamiento: después de S4, si llega un '1', debería ir a S2
+        #10 a = 1; // Recibe '1' -> Pasa a S2 (y = 0)
+        #10 a = 0; // Recibe '0' -> Pasa a S3
+        #10 a = 1; // Recibe '1' -> Pasa a S4 (y = 1)
 
         // Continuación para evaluar transiciones desde S4
         #10 a = 0; // Transición posterior
