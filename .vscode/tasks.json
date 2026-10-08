@@ -12,7 +12,7 @@
                 "-where",
                 "${fileDirname}",
                 "-c",
-                "iverilog -g2012 -o simulador.vvp ${fileBasenameNoExtension}.sv tb_${fileBasenameNoExtension}.sv && vvp simulador.vvp"
+                "iverilog -g2012 -o simulador.vvp *.sv && vvp simulador.vvp"
             ],
             "group": {
                 "kind": "build",
