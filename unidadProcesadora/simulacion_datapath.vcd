@@ -1,0 +1,261 @@
+$date
+	Sat Oct 31 21:51:28 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_DataPath $end
+$var wire 4 ! state_bits [3:0] $end
+$var wire 4 " data_out [3:0] $end
+$var reg 1 # clk $end
+$var reg 16 $ ctrl_word [15:0] $end
+$var reg 4 % data_in [3:0] $end
+$scope module uut $end
+$var wire 1 # clk $end
+$var wire 16 & ctrl_word [15:0] $end
+$var wire 4 ' data_in [3:0] $end
+$var wire 4 ( regb [3:0] $end
+$var wire 4 ) rega [3:0] $end
+$var wire 3 * h [2:0] $end
+$var wire 4 + flags [3:0] $end
+$var wire 4 , f [3:0] $end
+$var wire 4 - data_out [3:0] $end
+$var wire 3 . d [2:0] $end
+$var wire 4 / busb [3:0] $end
+$var wire 4 0 busa [3:0] $end
+$var wire 3 1 b [2:0] $end
+$var wire 4 2 aluout [3:0] $end
+$var wire 3 3 a [2:0] $end
+$var reg 4 4 state_bits [3:0] $end
+$scope module REG_file $end
+$var wire 3 5 a1 [2:0] $end
+$var wire 3 6 a2 [2:0] $end
+$var wire 3 7 a3 [2:0] $end
+$var wire 1 # clk $end
+$var wire 4 8 d1 [3:0] $end
+$var wire 4 9 d2 [3:0] $end
+$var wire 1 : we3 $end
+$var wire 4 ; d3 [3:0] $end
+$upscope $end
+$scope module alu_unit $end
+$var wire 4 < ALUControl [3:0] $end
+$var wire 4 = a [3:0] $end
+$var wire 4 > b [3:0] $end
+$var wire 1 ? carry $end
+$var wire 1 @ overflow $end
+$var wire 1 A zero $end
+$var wire 4 B sum [3:0] $end
+$var wire 1 C neg $end
+$var wire 1 D cout $end
+$var wire 1 E cin $end
+$var wire 4 F Vflags [3:0] $end
+$var reg 4 G Res [3:0] $end
+$var reg 4 H y [3:0] $end
+$upscope $end
+$scope module shifter_unit $end
+$var wire 4 I d [3:0] $end
+$var wire 3 J select [2:0] $end
+$var reg 4 K y [3:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 K
+b0 J
+b0 I
+b0 H
+b0 G
+b10 F
+0E
+0D
+0C
+b0 B
+1A
+0@
+0?
+b0 >
+b0 =
+b0 <
+b0 ;
+0:
+bx 9
+bx 8
+b0 7
+b0 6
+b0 5
+bx 4
+b0 3
+b0 2
+b0 1
+b0 0
+b0 /
+b0 .
+b0 -
+b0 ,
+b10 +
+b0 *
+bx )
+bx (
+b0 '
+b0 &
+b0 %
+b0 $
+0#
+b0 "
+bx !
+$end
+#5000
+b10 !
+b10 4
+1#
+#10000
+b0 +
+b0 F
+b101 "
+b101 -
+b101 ;
+b101 K
+0A
+b101 2
+b101 G
+b101 I
+b101 B
+1:
+b1 .
+b1 7
+b101 0
+b101 =
+b101 /
+b101 >
+0#
+b1000000 $
+b1000000 &
+b101 %
+b101 '
+#15000
+b0 !
+b0 4
+1#
+#20000
+b11 "
+b11 -
+b11 ;
+b11 K
+b11 2
+b11 G
+b11 I
+b11 B
+b10 .
+b10 7
+b11 0
+b11 =
+b11 /
+b11 >
+0#
+b10000000 $
+b10000000 &
+b11 %
+b11 '
+#25000
+1#
+#30000
+b110 "
+b110 -
+b110 ;
+b110 K
+b110 2
+b110 G
+b110 I
+b110 B
+b101 0
+b101 =
+b101 )
+b101 8
+b11 (
+b11 9
+1E
+b1 3
+b1 5
+b10 1
+b10 6
+b11 .
+b11 7
+b1 ,
+b1 <
+0#
+b1011010001 $
+b1011010001 &
+#35000
+1#
+#40000
+b110 2
+b110 G
+b110 I
+b110 B
+b110 0
+b110 =
+b110 )
+b110 8
+bx (
+bx 9
+0E
+b1100 "
+b1100 -
+b1100 ;
+b1100 K
+b11 3
+b11 5
+b0 1
+b0 6
+b100 .
+b100 7
+b0 ,
+b0 <
+b1 *
+b1 J
+0#
+b10000100000011 $
+b10000100000011 &
+#45000
+1#
+#50000
+1C
+b100 +
+b100 F
+b1100 2
+b1100 G
+b1100 I
+0@
+b1100 B
+b1100 0
+b1100 =
+b1100 )
+b1100 8
+0:
+b1100 "
+b1100 -
+b1100 ;
+b1100 K
+b100 3
+b100 5
+b0 .
+b0 7
+b0 *
+b0 J
+0#
+b100 $
+b100 &
+#55000
+b100 !
+b100 4
+1#
+#60000
+0#

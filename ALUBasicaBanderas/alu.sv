@@ -22,7 +22,7 @@ always_comb
        2'b11: Result = a | b; //OR
         default: Result = 32'b0; //default pone la salida en 0
     endcase
-    //asigno las banderas de salida para luego armar el vecto de flags
+    //asigno las banderas de salida para luego armar el vector de flags
     assign neg = Result[31]; //negativo si el bit de signo es 1
     assign zero = Result == 32'b0; //zero si la salida es 0
     assign carry = (ALUControl[1]==1'b0) & sum[32]; // carry solo para suma o resta aritmetica, si es AND o OR no hay carry
